@@ -1,0 +1,8 @@
+pipeline:
+  build:
+    task: text-generation
+    device_map: auto
+  run:
+    do_sample: true
+    top_k: 10
+    num_return_sequences: 1
